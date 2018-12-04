@@ -86,22 +86,22 @@
 
                 function sucesso(response) {
                     //resposta caso sucesso
-                    // console.log(response);
+                    console.log(response);
 
-                    //atribui a variavel sucesso o valor de reponse[sucesso]
-                    $sucesso = $.parseJSON(response)["sucesso"];
-                    $mensagem = $.parseJSON(response)["mensagem"];
+                    // //atribui a variavel sucesso o valor de reponse[sucesso]
+                    // $sucesso = $.parseJSON(response)["sucesso"];
+                    // $mensagem = $.parseJSON(response)["mensagem"];
                     
-                    //faz aparecer o elemento, muda o atributo display none para block
-                    $('#mensagem').show();
+                    // //faz aparecer o elemento, muda o atributo display none para block
+                    // $('#mensagem').show();
 
-                    if($sucesso) {
-                        //renderiza o html do id mensagem com o valor de response[mensagem]
-                        $('#mensagem p').html($mensagem);
-                    } else {
-                        //renderiza o html do id mensagem com o valor de response[mensagem]
-                        $('#mensagem p').html($mensagem); 
-                    }
+                    // if($sucesso) {
+                    //     //renderiza o html do id mensagem com o valor de response[mensagem]
+                    //     $('#mensagem p').html($mensagem);
+                    // } else {
+                    //     //renderiza o html do id mensagem com o valor de response[mensagem]
+                    //     $('#mensagem p').html($mensagem); 
+                    // }
                 }
 
                 function falha() {
